@@ -3,5 +3,5 @@ Coding game challenge
 
 type make to run all test
 
-[Challenge Overview](https://codingcompetitions.withgoogle.com/codejam/round/000000000043580a/00000000006d1284)
+[Challenge Overview](https://www.codingame.com/training/expert/the-resistance)
 [Challenge Description](https://www.codingame.com/ide/puzzle/the-resistance)
