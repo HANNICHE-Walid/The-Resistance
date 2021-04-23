@@ -129,6 +129,8 @@ int main()
         map<int,long> new_ways;
         extract_words(L,itt->first,dictionary,new_ways);
         for(auto & pp:new_ways){
+            //the number of ways to get to a new position B
+            //is (the number of ways to get to A) times (the number of ways from A to B)
             cur_way[pp.first]+=pp.second*itt->second;
         }
         cur_way.erase(itt);
