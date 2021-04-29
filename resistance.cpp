@@ -119,11 +119,10 @@ int main()
         dic_insert(dictionary, W.c_str(), W.size());
     }
     //dic_print(dictionary);
-    
-    map<int,long> cur_way={{0,1}};
+
     // cur_way.second is the number of ways possible to form a sentence using cur_way.first morse characters
-
-
+    map<int,long> cur_way={{0,1}};
+    
     auto itt=cur_way.begin();
     while(itt->first<L.size()){
         map<int,long> new_ways;
@@ -134,6 +133,8 @@ int main()
             cur_way[pp.first]+=pp.second*itt->second;
         }
         cur_way.erase(itt);
+
+        //start from the following position
         itt=cur_way.begin();
         if(itt==cur_way.end()){
             //impossible to make a sentence with this dictionary
